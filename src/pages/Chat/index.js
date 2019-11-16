@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import 'firebase/database';
 
+import firebaseConfig from './firebase.config';
+
 import {
   Container,
   Main,
@@ -11,8 +13,6 @@ import {
   ContainerLoading,
   Loading,
 } from './styles';
-
-import firebaseConfig from './firebase.config';
 
 export default function Chat({ match }) {
   const [chatList, setChatList] = useState([]);
